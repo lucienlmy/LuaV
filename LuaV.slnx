@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="LuaV/LuaV.vcxproj" Id="2d4cacc8-a2da-41ad-a062-02504fb3e0b8" />
+</Solution>
