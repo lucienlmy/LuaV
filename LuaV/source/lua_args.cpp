@@ -103,6 +103,7 @@ void LuaArgs::pushVector3(Vector3 v, int index)
     {
         lua_newtable(L);
         index = -3;
+        pushed++;
     }
 
     lua_pushstring(L, "x");
