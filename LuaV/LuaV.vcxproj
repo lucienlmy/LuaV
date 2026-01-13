@@ -156,6 +156,7 @@
     <ClCompile Include="source\lua.cpp" />
     <ClCompile Include="source\lua_args.cpp" />
     <ClCompile Include="source\natives.cpp" />
+    <ClCompile Include="source\patches.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="luajit\lauxlib.h" />
@@ -175,6 +176,7 @@
     <ClInclude Include="source\lua.h" />
     <ClInclude Include="source\lua_args.h" />
     <ClInclude Include="source\natives.h" />
+    <ClInclude Include="source\patches.h" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="luajit\lua51.lib" />

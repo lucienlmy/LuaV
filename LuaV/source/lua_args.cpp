@@ -5,6 +5,8 @@ LuaArgs::LuaArgs(lua_State* _L)
 	L = _L;
 	index = 0;
     pushed = 0;
+
+    //lua_checkstack();   
 }
 
 int LuaArgs::getInt()
