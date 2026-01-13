@@ -4,6 +4,8 @@
 #include "../luajit/lua.hpp"
 #include "../shv/types.h"
 
+#define lua_registertablefield(L, name, function) (lua_pushstring(L, name), lua_pushcfunction(L, function), lua_rawset(L, -3))
+
 struct LuaArgs
 {
 	lua_State* L;

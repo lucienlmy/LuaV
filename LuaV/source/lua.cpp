@@ -40,6 +40,7 @@ void luaInitialize()
 
     luaL_openlibs(L);
     luaRegisterNatives(L);
+    luaApplyPatches(L);
     luaRegisterFunctions(L);
 
     std::cout << "[PLUGIN] Registered Lua libraries, functions and natives." << std::endl;

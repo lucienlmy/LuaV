@@ -6,6 +6,7 @@
 #include "../luajit/lua.hpp"
 #include "../shv/types.h"
 #include "natives.h"
+#include "patches.h"
 #include "functions.h"
 
 struct Thread
