@@ -11,8 +11,16 @@ int keys[KEYS_ARRAY_SIZE];
 
 void onKeyboardMessage(DWORD key, WORD repeats, BYTE scanCode, BOOL isExtended, BOOL isWithAlt, BOOL wasDownBefore, BOOL isUpNow)
 {
+	bool isReleased = wasDownBefore && isUpNow;
+
+	// Avoid autorepeat messages
+	if (!isReleased && wasDownBefore && !isUpNow)
+	{
+		return;
+	}
+	
 	// If is released, then assign the state as released, otherwise assign it as pressed
-	keys[key] = (wasDownBefore && isUpNow) ? KEY_STATE_RELEASED : KEY_STATE_PRESSED;
+	keys[key] = isReleased ? KEY_STATE_RELEASED : KEY_STATE_PRESSED;
 }
 
 void updateKeyboard()
