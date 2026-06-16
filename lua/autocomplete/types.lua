@@ -1,0 +1,30 @@
+---@meta
+
+---@alias Any* ffi.cdata*
+---@class Any : integer
+---@alias BOOL boolean
+---@class Hash : integer
+---@class Entity : integer
+---@class Ped : Entity
+---@class Vehicle : Entity
+---@class Object : Entity
+---@class Player : integer
+---@class FireId : integer
+---@class Cam : integer
+---@class Group : integer
+---@class Train : integer
+---@class Pickup : integer
+---@class Weapon : integer
+---@class Interior : integer
+---@class Blip : integer
+---@class Texture : integer
+---@class TextureDict : integer
+---@class CoverPoint : integer
+---@class Camera : integer
+---@class TaskSequence : integer
+---@class ScrHandle : integer
+
+---@class Vector3
+---@field x number
+---@field y number
+---@field z number
