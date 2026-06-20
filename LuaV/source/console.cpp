@@ -25,6 +25,9 @@ void consoleTerminate()
         consoleOutput = nullptr;
     }
 
+	// Force a bad state on std::cout to prevent any further output after the console has been terminated
+	std::cout.setstate(std::ios_base::badbit);
+
     FreeConsole();
 }
 
